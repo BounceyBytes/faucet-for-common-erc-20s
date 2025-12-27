@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d0d;
+  --foreground: #ededed;
+  /* MANTRA specific colors */
+  --mantra-pink: #E85B80; 
+  --mantra-purple: #B465DA;
+  --mantra-dark: #18191b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-geist-mono);
+  
+  --color-mantra-pink: var(--mantra-pink);
+  --color-mantra-purple: var(--mantra-purple);
+  --color-mantra-dark: var(--mantra-dark);
+  
+  --image-mantra-gradient: linear-gradient(90deg, #E85B80 0%, #B465DA 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
